@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", system-ui;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dadada;
+}
+
+.main{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.upper{
+    height: 30%;
+    width: 100%;
+    background-color: #4071F4;
+}
+
+.image{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    left: 29%;
+    top: 10%;
+    background-color: #3057c3;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #4071F4;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.lower{
+    height: calc(100% - 30%);
+    width: 100%;
+    border-top: 1px solid rgba(174, 174, 174, 0.3);
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.lower h2{
+    margin: 5px auto;
+    margin-top: 15px;
+}
+
+.social-links{
+    display: flex;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.social-links .fa-brands:nth-child(1){
+    background-color: #406AB2;
+    padding: 10px 13px;
+}
+
+.social-links .fa-brands:nth-child(2){
+    background-color: #1DA4F1;
+}
+
+.social-links .fa-brands:nth-child(3){
+    background-color: #d92f6a;
+}
+
+.social-links .fa-brands:nth-child(4){
+    background-color: #F90005;
+}
+
+.social-links .fa-brands{
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-weight: 100;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.social-links .fa-brands:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.btns button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #4071F4;
+    color: #fff;
+    transition: transform ease .2s;
+}
+
+.btns button:hover{
+    transform: scale(1.1);
+    background-color: #3f69dc;
+}
+
+.btns button:active{
+    transform: scale(1);
+    background-color: #253f85;
+}
+
+
+.activities{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.fa-heart{
+    transition: all 0.2s;
+}
+
+.fa-heart:active{
+    color: red;
+    transform: scale(1.3);
+}
+
+.activities>div{
+    padding: 0 20px;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.activities .comments{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
